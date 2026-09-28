@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHRI RAM FOODS | Fresh Snacks & Namkeen</title>
+  <title>Shri Ram Foods | Pure Taste & Authentic Quality</title>
   <style>
     :root {
       --primary: #c2410c;
@@ -11,94 +11,190 @@
       --accent: #fff7ed;
       --dark: #1e293b;
       --light: #f8fafc;
+      --gray: #64748b;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, sans-serif; }
     body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
-    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
-    .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
-    .logo { font-size: 1.4rem; font-weight: bold; color: var(--primary); text-transform: uppercase; }
+    
+    /* Navigation */
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.06); position: sticky; top: 0; z-index: 100; }
+    .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0.9rem 1rem; }
+    .logo { font-size: 1.35rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; }
+    .nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; margin-left: 1.2rem; font-size: 0.95rem; }
+    .nav-links a:hover { color: var(--primary); }
+
+    /* Hero Section */
     .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 4.5rem 1rem; }
     .hero h1 { font-size: 2.5rem; margin-bottom: 0.8rem; }
-    .hero p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 1.5rem; color: #ffedd5; }
-    .btn { display: inline-block; background: #25D366; color: #fff; padding: 0.75rem 1.8rem; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1rem; }
+    .hero p { font-size: 1.15rem; max-width: 650px; margin: 0 auto 1.8rem; color: #ffedd5; }
+    .btn { display: inline-block; background: var(--secondary); color: #fff; padding: 0.75rem 1.8rem; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: 0.3s; }
+    .btn:hover { opacity: 0.9; }
+    .btn-whatsapp { background: #25D366; }
+
+    /* Layout Sections */
     .section { max-width: 1100px; margin: 0 auto; padding: 3.5rem 1rem; }
     .section-title { text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 2rem; }
+
+    /* About Section */
+    .about-box { background: #fff; border-radius: 12px; padding: 2.2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 5px solid var(--primary); }
+    .about-box p { margin-bottom: 1rem; color: #334155; font-size: 1.05rem; }
+    .badges { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+    .badge { background: var(--accent); color: var(--primary); padding: 0.4rem 0.9rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; border: 1px solid #fed7aa; }
+
+    /* Products Grid */
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.8rem; }
-    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.06); text-align: center; padding-bottom: 1.2rem; border-top: 4px solid var(--secondary); }
-    .product-img { width: 100%; height: 190px; object-fit: cover; background: #f1f5f9; display: block; }
-    .card h3 { font-size: 1.25rem; margin: 1rem 0 0.4rem; color: var(--dark); }
-    .card .desc { font-size: 0.9rem; color: #64748b; padding: 0 1rem; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center; padding-bottom: 1.2rem; border-top: 4px solid var(--secondary); }
+    .product-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+    .card h3 { font-size: 1.25rem; margin: 0.9rem 0 0.3rem; color: var(--dark); }
+    .card .desc { font-size: 0.9rem; color: var(--gray); padding: 0 1rem; }
     .price-tag { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin: 0.8rem 0; }
     .order-btn { display: inline-block; background: var(--secondary); color: #fff; padding: 0.4rem 1.2rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+
+    /* Contact & Address Section */
+    .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .info-card { background: #fff; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    .info-item { margin-bottom: 1.2rem; }
+    .info-item strong { display: block; color: var(--primary); font-size: 1rem; margin-bottom: 0.2rem; }
+    .info-item p { color: #334155; font-size: 0.95rem; }
+
+    /* Footer */
     footer { background: var(--dark); color: #94a3b8; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <header>
     <div class="nav-container">
       <div class="logo">Shri Ram Foods</div>
-      <a href="https://wa.me/8208949238" class="btn" style="padding: 0.4rem 1rem; font-size: 0.85rem;" target="_blank">WhatsApp Order</a>
+      <div class="nav-links">
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <h1>Shri Ram Foods</h1>
-    <p>Shuddh aur swadist namkeen, traditional snacks evan commercial rice flour.</p>
-    <a href="#products" class="btn" style="background: var(--secondary);">Our Products & Rate Dekhein</a>
+    <p>Shuddh Swad aur Paramparik Gunvatta. Hamare yahan fresh namkeen, snacks aur premium rice flour uplabdh hai.</p>
+    <a href="#products" class="btn">Hamare Products & Rate Dekhein</a>
   </section>
 
-  <section class="section" id="products">
+  <!-- About Us Section -->
+  <section class="section" id="about">
+    <h2 class="section-title">Hamare Bare Me (About Shri Ram Foods)</h2>
+    <div class="about-box">
+      <p>
+        <strong>Shri Ram Foods</strong> Nagpur me sthit ek vishwasniya food manufacturing aur trading enterprise hai. Hamara uddeshya aap tak shuddh, swadist aur surakshit snacks pahunchana hai.
+      </p>
+      <p>
+        Hamare yahan traditional Bhakarwadi, crunchy Sev, Chivda, Namakpara, Shakkapara ke sath-sath commercial aur domestic use ke liye fine quality ka <strong>Rice Flour (चावल आटा)</strong> taiyar kiya jata hai. Ham retail aur bulk (wholesale) orders dono ke liye behtareen quality aur competitive rates provide karte hain.
+      </p>
+      <div class="badges">
+        <span class="badge">✔ FSSAI Registered</span>
+        <span class="badge">✔ MSME / Udyam Registered</span>
+        <span class="badge">✔ 100% Shuddh & Fresh Quality</span>
+        <span class="badge">✔ Wholesale & Retail Supply</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section" id="products" style="background: #f1f5f9; border-radius: 16px;">
     <h2 class="section-title">Products & Rate List</h2>
     <div class="grid">
 
-      <!-- ITEM 1: Bhakarwadi -->
+      <!-- Item 1 -->
       <div class="card">
-        <!-- yahan src="..." me GitHub par upload ki hui photo ka exact naam likhein -->
         <img src="bhakarwadi.jpg" alt="Bhakarwadi" class="product-img">
         <h3>Special Bhakarwadi</h3>
-        <p class="desc">Crispy, sweet aur spicy masaledar taste.</p>
-        <!-- Yahan apna rate badlein -->
-        <p class="price-tag">₹140 / kg</p>
-        <a href="https://wa.me/8208949238?text=Mujhe%20Bhakarwadi%20chahiye" class="order-btn" target="_blank">Order Karein</a>
+        <p class="desc">Crispy, authentic spicy & sweet taste.</p>
+        <p class="price-tag">₹180 / kg</p>
+        <a href="https://wa.me/918208949238?text=Namaste,%20mujhe%20Bhakarwadi%20ke%20order%20ki%20jankari%20chahiye" class="order-btn" target="_blank">Order Karein</a>
       </div>
 
-      <!-- ITEM 2: Sev / Chivda -->
+      <!-- Item 2 -->
       <div class="card">
         <img src="sev.jpg" alt="Sev / Chivda" class="product-img">
         <h3>Sev / Chivda</h3>
-        <p class="desc">Fresh aur crunchy traditional namkeen.</p>
-        <!-- Yahan apna rate badlein -->
-        <p class="price-tag">₹150 / kg</p>
-        <a href="https://wa.me/8208949238?text=Mujhe%20Sev%20chahiye" class="order-btn" target="_blank">Order Karein</a>
+        <p class="desc">Fresh oil me bani crispy aur kurkuri namkeen.</p>
+        <p class="price-tag">₹160 / kg</p>
+        <a href="https://wa.me/918208949238?text=Namaste,%20mujhe%20Sev%20Chivda%20ke%20order%20ki%20jankari%20chahiye" class="order-btn" target="_blank">Order Karein</a>
       </div>
 
-      <!-- ITEM 3: Rice Flour -->
+      <!-- Item 3 -->
       <div class="card">
         <img src="rice-flour.jpg" alt="Rice Flour" class="product-img">
         <h3>Pure Rice Flour (चावल आटा)</h3>
-        <p class="desc">Commercial aur retail packing me fine quality.</p>
-        <!-- Yahan apna rate badlein -->
-        <p class="price-tag">₹40 / kg</p>
-        <a href="https://wa.me/8208949238?text=Mujhe%20Rice%20Flour%20chahiye" class="order-btn" target="_blank">Order Karein</a>
+        <p class="desc">Commercial aur retail packing me ultra-fine quality.</p>
+        <p class="price-tag">₹45 / kg</p>
+        <a href="https://wa.me/918208949238?text=Namaste,%20mujhe%20Rice%20Flour%20bulk%20order%20karna%20hai" class="order-btn" target="_blank">Order Karein</a>
       </div>
 
-      <!-- ITEM 4: Shakkapara / Namakpara -->
+      <!-- Item 4 -->
       <div class="card">
-        <img src="namakpara.jpg" alt="Shakkapara / Namakpara" class="product-img">
+        <img src="namakpara.jpg" alt="Namakpara / Shakkapara" class="product-img">
         <h3>Shakkapara / Namakpara</h3>
-        <p class="desc">Tea-time snacks, hamesha fresh aur kurkura.</p>
-        <!-- Yahan apna rate badlein -->
-        <p class="price-tag">₹130 / kg</p>
-        <a href="https://wa.me/8208949238?text=Mujhe%20Namakpara%20chahiye" class="order-btn" target="_blank">Order Karein</a>
+        <p class="desc">Chai ke sath pasandida aur crispy tea-time snack.</p>
+        <p class="price-tag">₹170 / kg</p>
+        <a href="https://wa.me/918208949238?text=Namaste,%20mujhe%20Namakpara%20order%20karna%20hai" class="order-btn" target="_blank">Order Karein</a>
       </div>
 
     </div>
   </section>
 
+  <!-- Contact & Address Section -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Sampark Sutra Evam Pata (Contact Us)</h2>
+    <div class="contact-container">
+      
+      <!-- Address Details -->
+      <div class="info-card">
+        <div class="info-item">
+          <strong>🏢 Factory / Business Address:</strong>
+          <p>21, Vaibhav Laxmi Nagar, Old Kamptee Road, Kalamna, Nagpur, Maharashtra - 440026</p>
+        </div>
+        <div class="info-item">
+          <strong>📜 Registration Details:</strong>
+          <p>FSSAI Reg. No: 21523055000059<br>Udyam Reg: UDYAM-MH-20-0091856</p>
+        </div>
+        <div class="info-item">
+          <strong>⏰ Business Hours:</strong>
+          <p>Monday – Sunday: 9:00 AM – 9:00 PM</p>
+        </div>
+      </div>
+
+      <!-- Quick Action Card -->
+      <div class="info-card" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h3 style="margin-bottom: 0.8rem; color: var(--dark);">Direct Order / Inquiry</h3>
+        <p style="margin-bottom: 1.5rem; color: var(--gray);">Wholesale rates aur distributorship ke liye humse turant call ya WhatsApp par judein:</p>
+        
+        <a href="https://wa.me/918208949238?text=Namaste%20Shri%20Ram%20Foods,%20mujhe%20products%20ke%20bare%20me%20inquiry%20karni%20hai" class="btn btn-whatsapp" style="width: 100%; margin-bottom: 0.8rem;" target="_blank">
+          💬 WhatsApp par Chat Karein
+        </a>
+        
+        <a href="tel:+918208949238" class="btn" style="width: 100%; background: var(--dark);">
+          📞 Call: +91 82089 49238
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2026 Shri Ram Foods. All Rights Reserved.</p>
+    <p>© 2026 Shri Ram Foods, Nagpur. All Rights Reserved.</p>
   </footer>
 
 </body>
 </html>
+<div class="info-item">
+          <strong>📜 Registration Details:</strong>
+          <p>
+            GSTIN: 27AKIPU3927C1Z0<br>
+            FSSAI Reg. No: 21523055000059<br>
+            Udyam Reg: UDYAM-MH-20-0091856
+          </p>
+        </div>
