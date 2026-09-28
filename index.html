@@ -3,33 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shri Ram Foods | Pure & Authentic Taste</title>
+  <title>SHRI RAM FOODS | Fresh Snacks & Namkeen</title>
   <style>
     :root {
       --primary: #c2410c;
-      --secondary: #f97316;
-      --accent: #fef3c7;
+      --secondary: #ea580c;
+      --accent: #fff7ed;
       --dark: #1e293b;
       --light: #f8fafc;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
     body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
-    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 100; }
     .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
-    .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
-    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 5rem 1rem; }
-    .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: #fff; }
-    .hero p { font-size: 1.2rem; max-width: 650px; margin: 0 auto 2rem; color: #ffedd5; }
-    .btn { display: inline-block; background: var(--secondary); color: #fff; padding: 0.8rem 2rem; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
-    .btn:hover { background: var(--primary); }
-    .section { max-width: 1100px; margin: 0 auto; padding: 4rem 1rem; }
-    .section-title { text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 2.5rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
-    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.06); text-align: center; padding: 1.5rem; border-top: 4px solid var(--secondary); }
-    .card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--dark); }
-    .card p { font-size: 0.95rem; color: #64748b; }
-    .contact-box { background: #fff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; max-width: 600px; margin: 0 auto; }
-    footer { background: var(--dark); color: #94a3b8; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; }
+    .logo { font-size: 1.4rem; font-weight: bold; color: var(--primary); text-transform: uppercase; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 4.5rem 1rem; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 0.8rem; }
+    .hero p { font-size: 1.15rem; max-width: 600px; margin: 0 auto 1.5rem; color: #ffedd5; }
+    .btn { display: inline-block; background: #25D366; color: #fff; padding: 0.75rem 1.8rem; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1rem; }
+    .section { max-width: 1100px; margin: 0 auto; padding: 3.5rem 1rem; }
+    .section-title { text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.8rem; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.06); text-align: center; padding-bottom: 1.2rem; border-top: 4px solid var(--secondary); }
+    .product-img { width: 100%; height: 190px; object-fit: cover; background: #f1f5f9; display: block; }
+    .card h3 { font-size: 1.25rem; margin: 1rem 0 0.4rem; color: var(--dark); }
+    .card .desc { font-size: 0.9rem; color: #64748b; padding: 0 1rem; }
+    .price-tag { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin: 0.8rem 0; }
+    .order-btn { display: inline-block; background: var(--secondary); color: #fff; padding: 0.4rem 1.2rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 600; }
+    footer { background: var(--dark); color: #94a3b8; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
@@ -37,84 +38,61 @@
   <header>
     <div class="nav-container">
       <div class="logo">Shri Ram Foods</div>
-      <a href="#contact" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order Now</a>
+      <a href="https://wa.me/8208949238" class="btn" style="padding: 0.4rem 1rem; font-size: 0.85rem;" target="_blank">WhatsApp Order</a>
     </div>
   </header>
 
   <section class="hero">
     <h1>Shri Ram Foods</h1>
-    <p>Shuddh Swad, Paramparik Gunvatta. Hamare yahan fresh namkeen, snacks aur wholesale rice flour uplabdh hai.</p>
-    <a href="#contact" class="btn">Wholesale / Retail Inquiry</a>
+    <p>Shuddh aur swadist namkeen, traditional snacks evan commercial rice flour.</p>
+    <a href="#products" class="btn" style="background: var(--secondary);">Our Products & Rate Dekhein</a>
   </section>
 
-  <section class="section">
-    <section class="section">
-    <h2 class="section-title">Hamare Products & Rate List</h2>
+  <section class="section" id="products">
+    <h2 class="section-title">Products & Rate List</h2>
     <div class="grid">
 
-      <!-- Card 1 -->
+      <!-- ITEM 1: Bhakarwadi -->
       <div class="card">
-        <img src="bhakarwadi.jpg" alt="Bhakarwadi" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:12px;">
+        <!-- yahan src="..." me GitHub par upload ki hui photo ka exact naam likhein -->
+        <img src="bhakarwadi.jpg" alt="Bhakarwadi" class="product-img">
         <h3>Special Bhakarwadi</h3>
-        <p>Crispy, authentic spicy & sweet taste.</p>
-        <p style="font-size:1.2rem; font-weight:bold; color:var(--primary); margin-top:8px;">₹180 / kg</p>
+        <p class="desc">Crispy, sweet aur spicy masaledar taste.</p>
+        <!-- Yahan apna rate badlein -->
+        <p class="price-tag">₹140 / kg</p>
+        <a href="https://wa.me/8208949238?text=Mujhe%20Bhakarwadi%20chahiye" class="order-btn" target="_blank">Order Karein</a>
       </div>
 
-      <!-- Card 2 -->
+      <!-- ITEM 2: Sev / Chivda -->
       <div class="card">
-        <img src="sev.jpg" alt="Sev / Chivda" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:12px;">
-        <h3>Crispy Sev / Chivda</h3>
-        <p>Fresh oil me bani crunchy namkeen.</p>
-        <p style="font-size:1.2rem; font-weight:bold; color:var(--primary); margin-top:8px;">₹160 / kg</p>
+        <img src="sev.jpg" alt="Sev / Chivda" class="product-img">
+        <h3>Sev / Chivda</h3>
+        <p class="desc">Fresh aur crunchy traditional namkeen.</p>
+        <!-- Yahan apna rate badlein -->
+        <p class="price-tag">₹150 / kg</p>
+        <a href="https://wa.me/8208949238?text=Mujhe%20Sev%20chahiye" class="order-btn" target="_blank">Order Karein</a>
       </div>
 
-      <!-- Card 3 -->
+      <!-- ITEM 3: Rice Flour -->
       <div class="card">
-        <img src="rice-flour.jpg" alt="Rice Flour" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:12px;">
+        <img src="rice-flour.jpg" alt="Rice Flour" class="product-img">
         <h3>Pure Rice Flour (चावल आटा)</h3>
-        <p>Fine quality commercial & retail pack.</p>
-        <p style="font-size:1.2rem; font-weight:bold; color:var(--primary); margin-top:8px;">₹45 / kg (Bulk Rate)</p>
+        <p class="desc">Commercial aur retail packing me fine quality.</p>
+        <!-- Yahan apna rate badlein -->
+        <p class="price-tag">₹40 / kg</p>
+        <a href="https://wa.me/8208949238?text=Mujhe%20Rice%20Flour%20chahiye" class="order-btn" target="_blank">Order Karein</a>
       </div>
 
-      <!-- Card 4 -->
+      <!-- ITEM 4: Shakkapara / Namakpara -->
       <div class="card">
-        <img src="shakkapara.jpg" alt="Shakkapara / Namakpara" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:12px;">
+        <img src="namakpara.jpg" alt="Shakkapara / Namakpara" class="product-img">
         <h3>Shakkapara / Namakpara</h3>
-        <p>Traditional snacks festive & daily tea-time.</p>
-        <p style="font-size:1.2rem; font-weight:bold; color:var(--primary); margin-top:8px;">₹170 / kg</p>
+        <p class="desc">Tea-time snacks, hamesha fresh aur kurkura.</p>
+        <!-- Yahan apna rate badlein -->
+        <p class="price-tag">₹170 / kg</p>
+        <a href="https://wa.me/8208949238?text=Mujhe%20Namakpara%20chahiye" class="order-btn" target="_blank">Order Karein</a>
       </div>
 
-    </div>
-  </section>
-    <h2 class="section-title">Hamare Products</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Traditional Namkeen</h3>
-        <p>Bhakarwadi, Sev, Chivda, Namakpara aur Mathri fresh aur crunchy quality me.</p>
-      </div>
-      <div class="card">
-        <h3>Premium Sweets & Snacks</h3>
-        <p>Shakkapara, Maida Masala Kaju aur traditional seasonal snacks.</p>
-      </div>
-      <div class="card">
-        <h3>Rice Flour (Chawal ka Aata)</h3>
-        <p>Commercial aur retail packing ke liye ultra-fine, shuddh chawal ka aata.</p>
-      </div>
-      <div class="card">
-        <h3>Bulk & Wholesale Supply</h3>
-        <p>Retailers, party orders aur distributors ke liye aakarshak bulk rates.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contact" style="background: var(--accent); border-radius: 16px;">
-    <h2 class="section-title" style="margin-bottom: 1rem;">Sampark Karein</h2>
-    <div class="contact-box">
-      <p style="margin-bottom: 1rem; font-size: 1.1rem;">Bulk order ya distributorship ke liye direct message karein:</p>
-      <!-- Apna 10 digit WhatsApp number replace karein '91XXXXXXXXXX' ki jagah -->
-      <a href="https://wa.me/8208949238?text=Namaste%20Shri%20Ram%20Foods,%20mujhe%20order%20ke%20bare%20me%20jankari%20chahiye" class="btn" style="background: #25D366; font-size: 1.1rem;" target="_blank">
-        💬 WhatsApp par Order Karein
-      </a>
     </div>
   </section>
 
