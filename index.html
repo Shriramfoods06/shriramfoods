@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Ram Foods | Pure & Authentic Taste</title>
+  <style>
+    :root {
+      --primary: #c2410c;
+      --secondary: #f97316;
+      --accent: #fef3c7;
+      --dark: #1e293b;
+      --light: #f8fafc;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+    .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 5rem 1rem; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; color: #fff; }
+    .hero p { font-size: 1.2rem; max-width: 650px; margin: 0 auto 2rem; color: #ffedd5; }
+    .btn { display: inline-block; background: var(--secondary); color: #fff; padding: 0.8rem 2rem; border-radius: 30px; text-decoration: none; font-weight: bold; transition: 0.3s; border: none; cursor: pointer; }
+    .btn:hover { background: var(--primary); }
+    .section { max-width: 1100px; margin: 0 auto; padding: 4rem 1rem; }
+    .section-title { text-align: center; font-size: 2rem; color: var(--primary); margin-bottom: 2.5rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
+    .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.06); text-align: center; padding: 1.5rem; border-top: 4px solid var(--secondary); }
+    .card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--dark); }
+    .card p { font-size: 0.95rem; color: #64748b; }
+    .contact-box { background: #fff; border-radius: 12px; padding: 2.5rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; max-width: 600px; margin: 0 auto; }
+    footer { background: var(--dark); color: #94a3b8; text-align: center; padding: 2rem 1rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">Shri Ram Foods</div>
+      <a href="#contact" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">Order Now</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Shri Ram Foods</h1>
+    <p>Shuddh Swad, Paramparik Gunvatta. Hamare yahan fresh namkeen, snacks aur wholesale rice flour uplabdh hai.</p>
+    <a href="#contact" class="btn">Wholesale / Retail Inquiry</a>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Hamare Products</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Traditional Namkeen</h3>
+        <p>Bhakarwadi, Sev, Chivda, Namakpara aur Mathri fresh aur crunchy quality me.</p>
+      </div>
+      <div class="card">
+        <h3>Premium Sweets & Snacks</h3>
+        <p>Shakkapara, Maida Masala Kaju aur traditional seasonal snacks.</p>
+      </div>
+      <div class="card">
+        <h3>Rice Flour (Chawal ka Aata)</h3>
+        <p>Commercial aur retail packing ke liye ultra-fine, shuddh chawal ka aata.</p>
+      </div>
+      <div class="card">
+        <h3>Bulk & Wholesale Supply</h3>
+        <p>Retailers, party orders aur distributors ke liye aakarshak bulk rates.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" style="background: var(--accent); border-radius: 16px;">
+    <h2 class="section-title" style="margin-bottom: 1rem;">Sampark Karein</h2>
+    <div class="contact-box">
+      <p style="margin-bottom: 1rem; font-size: 1.1rem;">Bulk order ya distributorship ke liye direct message karein:</p>
+      <!-- Apna 10 digit WhatsApp number replace karein '91XXXXXXXXXX' ki jagah -->
+      <a href="https://wa.me/8208949238?text=Namaste%20Shri%20Ram%20Foods,%20mujhe%20order%20ke%20bare%20me%20jankari%20chahiye" class="btn" style="background: #25D366; font-size: 1.1rem;" target="_blank">
+        💬 WhatsApp par Order Karein
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Shri Ram Foods. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
