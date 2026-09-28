@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHRI RAM FOODS | Authentic Indian Snacks & Pure Rice Flour</title>
+  <title>Shri Ram Foods | Authentic Indian Snacks & Wholesale</title>
   <style>
     :root {
       --primary: #c2410c;
@@ -25,13 +25,19 @@
     .nav-links a { text-decoration: none; color: var(--dark); font-weight: 600; margin-left: 1.4rem; font-size: 0.95rem; }
     .nav-links a:hover { color: var(--primary); }
 
-    /* Hero Section */
-    .hero { background: linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.68)), url('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1200&q=80') center/cover; color: #fff; text-align: center; padding: 5rem 1rem; }
-    .hero h1 { font-size: 2.6rem; margin-bottom: 0.8rem; font-weight: 800; }
-    .hero p { font-size: 1.15rem; max-width: 680px; margin: 0 auto 1.8rem; color: #ffedd5; }
+    /* Hero Section with banner.jpg */
+    .hero { 
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('banner.jpg') center/cover no-repeat; 
+      color: #fff; 
+      text-align: center; 
+      padding: 5.5rem 1rem; 
+    }
+    .hero h1 { font-size: 2.7rem; margin-bottom: 0.8rem; font-weight: 800; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+    .hero p { font-size: 1.2rem; max-width: 680px; margin: 0 auto 1.8rem; color: #ffedd5; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
     .btn { display: inline-block; background: var(--secondary); color: #fff; padding: 0.75rem 1.8rem; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 0.95rem; transition: 0.3s; }
-    .btn:hover { opacity: 0.9; }
-    .btn-whatsapp { background: #25D366; }
+    .btn:hover { background: var(--primary); }
+    .btn-whatsapp { background: #25D366; color: #fff; }
+    .btn-whatsapp:hover { background: #1eb757; }
 
     /* Layout Sections */
     .section { max-width: 1150px; margin: 0 auto; padding: 3.5rem 1rem; }
@@ -45,19 +51,19 @@
 
     /* Category Group Styling */
     .category-group { margin-bottom: 3.5rem; }
-    .category-header { display: flex; align-items: center; gap: 12px; border-bottom: 2px solid #fed7aa; padding-bottom: 0.6rem; margin-bottom: 1.6rem; }
-    .category-header h3 { font-size: 1.5rem; color: var(--dark); font-weight: 700; }
-    .category-header span { background: var(--secondary); color: #fff; font-size: 0.8rem; padding: 0.2rem 0.6rem; border-radius: 12px; font-weight: 600; }
+    .category-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #fed7aa; padding-bottom: 0.6rem; margin-bottom: 1.6rem; }
+    .category-header h3 { font-size: 1.45rem; color: var(--dark); font-weight: 700; }
+    .category-header span { background: var(--secondary); color: #fff; font-size: 0.8rem; padding: 0.25rem 0.7rem; border-radius: 12px; font-weight: 600; }
 
     /* Product Grid & Cards */
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.6rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
     .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center; padding-bottom: 1.2rem; border-top: 4px solid var(--secondary); display: flex; flex-direction: column; justify-content: space-between; }
-    .product-img { width: 100%; height: 180px; object-fit: cover; background: #e2e8f0; display: block; }
+    .product-img { width: 100%; height: 160px; object-fit: cover; background: #e2e8f0; display: block; }
     .card-content { padding: 0.8rem 1rem 0; }
-    .card h4 { font-size: 1.2rem; margin-bottom: 0.3rem; color: var(--dark); }
-    .card .desc { font-size: 0.9rem; color: var(--gray); min-height: 40px; }
-    .price-tag { font-size: 1.25rem; font-weight: 800; color: var(--primary); margin: 0.8rem 0; }
+    .card h4 { font-size: 1.15rem; margin-bottom: 0.3rem; color: var(--dark); }
+    .price-tag { font-size: 1.3rem; font-weight: 800; color: var(--primary); margin: 0.7rem 0; }
     .order-btn { display: inline-block; background: var(--secondary); color: #fff; padding: 0.45rem 1.4rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 600; margin-top: auto; }
+    .order-btn:hover { background: var(--primary); }
 
     /* Contact Section */
     .contact-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
@@ -72,11 +78,10 @@
 </head>
 <body>
 
-  <!-- Navigation Bar with Logo -->
+  <!-- Navigation Bar -->
   <header>
     <div class="nav-container">
       <a href="#" class="logo-container">
-        <!-- Logo file is set to logo.jpg -->
         <img src="logo.jpg" alt="Shri Ram Foods Logo" class="logo-img">
         <span class="logo-text">Shri Ram Foods</span>
       </a>
@@ -88,11 +93,11 @@
     </div>
   </header>
 
-  <!-- Hero Banner -->
-  <section class="banner.jpg">
-    <h1>SHRI RAM FOODS</h1>
-    <p>Pure Taste & Traditional Indian Quality. Leading wholesale manufacturer and supplier of specialty snacks, savory namkeen, and pure commercial rice flour.</p>
-    <a href="#products" class="btn">Explore All Product Categories</a>
+  <!-- Hero Section (Using banner.jpg) -->
+  <section class="hero">
+    <h1>Shri Ram Foods</h1>
+    <p>Pure Taste & Traditional Indian Quality. Wholesale manufacturer and supplier of authentic snacks, namkeen, and special delicacies.</p>
+    <a href="#products" class="btn">View Product Catalog & Rates</a>
   </section>
 
   <!-- About Us Section -->
@@ -103,180 +108,251 @@
         <strong>Shri Ram Foods</strong> is a Nagpur-based food manufacturing and trading enterprise committed to standard food quality, authentic traditional flavor, and maximum freshness.
       </p>
       <p>
-        We specialize in authentic handcrafted snacks including multiple regional varieties of crunchy Bhakarwadi, savory Sev & Chivda mixes, and festive snacks. Additionally, we manufacture premium ultra-fine <strong>Rice Flour</strong> engineered for snacks preparation, baking, and bulk commercial food processing.
+        We manufacture and wholesale a comprehensive range of traditional Indian snacks including specialized Bhakarwadi, crunchy Sev, crispy Mathri, authentic Chivda, and Bundi. We serve retailers, wholesalers, and bulk catering orders with unmatched consistency.
       </p>
       <div class="badges">
-        <span class="badge">✔ FSSAI Certified</span>
-        <span class="badge">✔ MSME Registered</span>
-        <span class="badge">✔ Wholesale & Bulk Supplier</span>
-        <span class="badge">✔ Strict Hygiene & Fresh Ingredients</span>
+        <span class="badge">✔ FSSAI Registered</span>
+        <span class="badge">✔ MSME Certified</span>
+        <span class="badge">✔ 100% Pure & Fresh Quality</span>
+        <span class="badge">✔ Wholesale & Bulk Supply</span>
       </div>
     </div>
   </section>
 
   <!-- Grouped Products Section -->
   <section class="section" id="products" style="background: #f8fafc;">
-    <h2 class="section-title">Product Catalog & Rates</h2>
+    <h2 class="section-title">Products & Price List</h2>
 
-    <!-- GROUP 1: BHAKARWADI SPECIALTIES -->
+    <!-- GROUP 1: BHAKARWADI -->
     <div class="category-group">
       <div class="category-header">
-        <h3>1. Special Bhakarwadi Collection</h3>
-        <span>Signature Products</span>
+        <h3>1. Bhakarwadi Collection</h3>
+        <span>Signature Special</span>
       </div>
       <div class="grid">
-
+        
         <div class="card">
-          <img src="bhakarwadi.jpg" alt="Special Regular Bhakarwadi" class="product-img">
+          <img src="local-bhakarwadi.jpg" alt="Local Bhakarwadi" class="product-img">
           <div class="card-content">
-            <h4>Special Traditional Bhakarwadi</h4>
-            <p class="desc">Crispy layered pinwheel snack stuffed with spiced coconut & sesame masala.</p>
-            <p class="price-tag">₹180 / kg</p>
+            <h4>Local Bhakarwadi</h4>
+            <p class="price-tag">₹110 / kg</p>
           </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Traditional%20Bhakarwadi" class="order-btn" target="_blank">Order on WhatsApp</a>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Local%20Bhakarwadi" class="order-btn" target="_blank">Order on WhatsApp</a>
         </div>
 
         <div class="card">
           <img src="garlic-bhakarwadi.jpg" alt="Garlic Bhakarwadi" class="product-img">
           <div class="card-content">
-            <h4>Garlic (Lasun) Bhakarwadi</h4>
-            <p class="desc">Zesty aromatic garlic flavor combined with crispy crunch.</p>
-            <p class="price-tag">₹190 / kg</p>
+            <h4>Garlic Bhakarwadi</h4>
+            <p class="price-tag">₹130 / kg</p>
           </div>
           <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Garlic%20Bhakarwadi" class="order-btn" target="_blank">Order on WhatsApp</a>
         </div>
 
         <div class="card">
-          <img src="mini-bhakarwadi.jpg" alt="Mini Sweet & Spicy Bhakarwadi" class="product-img">
+          <img src="methi-bhakarwadi.jpg" alt="Methi Bhakarwadi" class="product-img">
           <div class="card-content">
-            <h4>Mini Bite Bhakarwadi</h4>
-            <p class="desc">Small-sized, highly crunchy bite pieces packed with authentic sweetness & spice.</p>
-            <p class="price-tag">₹185 / kg</p>
+            <h4>Methi Bhakarwadi</h4>
+            <p class="price-tag">₹130 / kg</p>
           </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Mini%20Bite%20Bhakarwadi" class="order-btn" target="_blank">Order on WhatsApp</a>
-        </div>
-
-        <div class="card">
-          <img src="coin-bhakarwadi.jpg" alt="Coin Bhakarwadi" class="product-img">
-          <div class="card-content">
-            <h4>Coin / Round Bhakarwadi</h4>
-            <p class="desc">Thin rolled crispy disc wafers, ideal for premium tea-time snacking.</p>
-            <p class="price-tag">₹190 / kg</p>
-          </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Coin%20Bhakarwadi" class="order-btn" target="_blank">Order on WhatsApp</a>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Methi%20Bhakarwadi" class="order-btn" target="_blank">Order on WhatsApp</a>
         </div>
 
       </div>
     </div>
 
-    <!-- GROUP 2: SEV & CHIVDA -->
+    <!-- GROUP 2: MATHRI -->
     <div class="category-group">
       <div class="category-header">
-        <h3>2. Traditional Sev & Chivda</h3>
-        <span>Fresh Namkeen</span>
+        <h3>2. Mathri Range</h3>
+        <span>Crispy Tea-Time Snack</span>
       </div>
       <div class="grid">
+        
+        <div class="card">
+          <img src="plain-mathri.jpg" alt="Plain Mathri" class="product-img">
+          <div class="card-content">
+            <h4>Plain Mathri</h4>
+            <p class="price-tag">₹125 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Plain%20Mathri" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <img src="masala-mathri.jpg" alt="Masala Mathri" class="product-img">
+          <div class="card-content">
+            <h4>Masala Mathri</h4>
+            <p class="price-tag">₹130 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Masala%20Mathri" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <img src="methi-mathri.jpg" alt="Methi Mathri" class="product-img">
+          <div class="card-content">
+            <h4>Methi Mathri</h4>
+            <p class="price-tag">₹135 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Methi%20Mathri" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <img src="jira-mathri.jpg" alt="Jira Mathri" class="product-img">
+          <div class="card-content">
+            <h4>Jira Mathri</h4>
+            <p class="price-tag">₹135 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Jira%20Mathri" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <img src="garlic-mathri.jpg" alt="Garlic Mathri" class="product-img">
+          <div class="card-content">
+            <h4>Garlic Mathri</h4>
+            <p class="price-tag">₹135 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Garlic%20Mathri" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- GROUP 3: SEV -->
+    <div class="category-group">
+      <div class="category-header">
+        <h3>3. Sev Varieties</h3>
+        <span>Crunchy Namkeen</span>
+      </div>
+      <div class="grid">
+        
+        <div class="card">
+          <img src="local-sev.jpg" alt="Local Sev" class="product-img">
+          <div class="card-content">
+            <h4>Local Sev</h4>
+            <p class="price-tag">₹85 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Local%20Sev" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
 
         <div class="card">
           <img src="besan-sev.jpg" alt="Besan Sev" class="product-img">
           <div class="card-content">
-            <h4>Fine Besan Sev (1 No.)</h4>
-            <p class="desc">Crispy golden gram flour sev seasoned with traditional spices.</p>
-            <p class="price-tag">₹160 / kg</p>
+            <h4>Besan Sev</h4>
+            <p class="price-tag">₹125 / kg</p>
           </div>
           <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Besan%20Sev" class="order-btn" target="_blank">Order on WhatsApp</a>
         </div>
 
         <div class="card">
-          <img src="sabji-sev.jpg" alt="Sabji Tikha Sev" class="product-img">
+          <img src="sabji-sev.jpg" alt="Sabji Sev" class="product-img">
           <div class="card-content">
-            <h4>Spicy Sabji Sev</h4>
-            <p class="desc">Thick, spicy sev specially crafted for curry and sev-tamatar preparation.</p>
-            <p class="price-tag">₹160 / kg</p>
+            <h4>Sabji Sev</h4>
+            <p class="price-tag">₹135 / kg</p>
           </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Spicy%20Sabji%20Sev" class="order-btn" target="_blank">Order on WhatsApp</a>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Sabji%20Sev" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <img src="bhavnagari-sev.jpg" alt="Bhavnagari Sev" class="product-img">
+          <div class="card-content">
+            <h4>Bhavnagari Sev</h4>
+            <p class="price-tag">₹135 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Bhavnagari%20Sev" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <img src="garlic-sev.jpg" alt="Garlic Sev" class="product-img">
+          <div class="card-content">
+            <h4>Garlic Sev</h4>
+            <p class="price-tag">₹135 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Garlic%20Sev" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- GROUP 4: CHIVDA -->
+    <div class="category-group">
+      <div class="category-header">
+        <h3>4. Chivda Blends</h3>
+        <span>Flavorful Mixtures</span>
+      </div>
+      <div class="grid">
+        
+        <div class="card">
+          <img src="bikaneri-chivda.jpg" alt="Bikaneri Chivda" class="product-img">
+          <div class="card-content">
+            <h4>Bikaneri Chivda</h4>
+            <p class="price-tag">₹170 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Bikaneri%20Chivda" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <img src="golden-chivda.jpg" alt="Golden Chivda" class="product-img">
+          <div class="card-content">
+            <h4>Golden Chivda</h4>
+            <p class="price-tag">₹170 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Golden%20Chivda" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
+
+        <div class="card">
+          <img src="khatta-mitha-chivda.jpg" alt="Khatta Mitha Chivda" class="product-img">
+          <div class="card-content">
+            <h4>Khatta Mitha Chivda</h4>
+            <p class="price-tag">₹170 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Khatta%20Mitha%20Chivda" class="order-btn" target="_blank">Order on WhatsApp</a>
         </div>
 
         <div class="card">
           <img src="saoji-chivda.jpg" alt="Saoji Chivda" class="product-img">
           <div class="card-content">
-            <h4>Special Saoji Chivda</h4>
-            <p class="desc">Nagpur's signature fiery, spicy roasted mixture with peanuts.</p>
-            <p class="price-tag">₹170 / kg</p>
+            <h4>Saoji Chivda</h4>
+            <p class="price-tag">₹135 / kg</p>
           </div>
           <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Saoji%20Chivda" class="order-btn" target="_blank">Order on WhatsApp</a>
         </div>
 
         <div class="card">
-          <img src="bikaneri-chivda.jpg" alt="Bikaneri Chivda" class="product-img">
+          <img src="yellow-saoji-chivda.jpg" alt="Yellow Saoji Chivda" class="product-img">
           <div class="card-content">
-            <h4>Khatta Meetha / Bikaneri Chivda</h4>
-            <p class="desc">Sweet and tangy mixture with crisp flakes and mild seasoning.</p>
-            <p class="price-tag">₹165 / kg</p>
+            <h4>Yellow Saoji Chivda</h4>
+            <p class="price-tag">₹135 / kg</p>
           </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Chivda" class="order-btn" target="_blank">Order on WhatsApp</a>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Yellow%20Saoji%20Chivda" class="order-btn" target="_blank">Order on WhatsApp</a>
         </div>
 
       </div>
     </div>
 
-    <!-- GROUP 3: CRISPY SNACKS -->
-    <div class="category-group">
-      <div class="category-header">
-        <h3>3. Crispy Bites & Sweets</h3>
-        <span>Tea-Time Specials</span>
-      </div>
-      <div class="grid">
-
-        <div class="card">
-          <img src="namakpara.jpg" alt="Crispy Namakpara" class="product-img">
-          <div class="card-content">
-            <h4>Diamond Namakpara</h4>
-            <p class="desc">Flaky diamond-cut savory snacks infused with aromatic ajwain.</p>
-            <p class="price-tag">₹160 / kg</p>
-          </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Namakpara" class="order-btn" target="_blank">Order on WhatsApp</a>
-        </div>
-
-        <div class="card">
-          <img src="shakkapara.jpg" alt="Shakkapara" class="product-img">
-          <div class="card-content">
-            <h4>Sweet Shakkapara</h4>
-            <p class="desc">Crispy traditional sugar-glazed bite-sized sweet snacks.</p>
-            <p class="price-tag">₹170 / kg</p>
-          </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Shakkapara" class="order-btn" target="_blank">Order on WhatsApp</a>
-        </div>
-
-        <div class="card">
-          <img src="mathri.jpg" alt="Mathri" class="product-img">
-          <div class="card-content">
-            <h4>Crispy Masala Mathri</h4>
-            <p class="desc">Traditional round, flaky spiced crackers with long shelf-life.</p>
-            <p class="price-tag">₹165 / kg</p>
-          </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Mathri" class="order-btn" target="_blank">Order on WhatsApp</a>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- GROUP 4: FLOUR & BULK SUPPLY -->
+    <!-- GROUP 5: BUNDI -->
     <div class="category-group" style="margin-bottom: 0;">
       <div class="category-header">
-        <h3>4. Pure Flours & Bulk Processing</h3>
-        <span>Commercial Supply</span>
+        <h3>5. Bundi Collection</h3>
+        <span>Crispy Pearls</span>
       </div>
       <div class="grid">
+        
+        <div class="card">
+          <img src="yellow-bundi.jpg" alt="Yellow Bundi" class="product-img">
+          <div class="card-content">
+            <h4>Yellow Bundi</h4>
+            <p class="price-tag">₹140 / kg</p>
+          </div>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Yellow%20Bundi" class="order-btn" target="_blank">Order on WhatsApp</a>
+        </div>
 
         <div class="card">
-          <img src="rice-flour.jpg" alt="Pure Rice Flour" class="product-img">
+          <img src="masala-bundi.jpg" alt="Masala Bundi" class="product-img">
           <div class="card-content">
-            <h4>Pure Fine Rice Flour</h4>
-            <p class="desc">Commercial & retail pulverized fine white rice flour for snacks and cooking.</p>
-            <p class="price-tag">₹45 / kg (Bulk)</p>
+            <h4>Masala Bundi</h4>
+            <p class="price-tag">₹140 / kg</p>
           </div>
-          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20bulk%20rates%20for%20Rice%20Flour" class="order-btn" target="_blank">Inquire Bulk Rates</a>
+          <a href="https://wa.me/918208949238?text=Hello,%20I%20want%20to%20order%20Masala%20Bundi" class="order-btn" target="_blank">Order on WhatsApp</a>
         </div>
 
       </div>
@@ -284,7 +360,7 @@
 
   </section>
 
-  <!-- Contact & Legal Section -->
+  <!-- Contact Section -->
   <section class="section" id="contact">
     <h2 class="section-title">Contact & Enterprise Details</h2>
     <div class="contact-container">
@@ -312,13 +388,13 @@
       <!-- Action Card -->
       <div class="info-card" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <h3 style="margin-bottom: 0.8rem; color: var(--dark);">Wholesale & Dealership Orders</h3>
-        <p style="margin-bottom: 1.5rem; color: var(--gray);">Direct manufacturer rates for distributors, supermarkets, and catering orders:</p>
+        <p style="margin-bottom: 1.5rem; color: var(--gray);">Direct manufacturer rates for bulk supply, grocery stores, and distributors:</p>
         
-        <a href="https://wa.me/918208949238?text=Hello%20Shri%20Ram%20Foods,%20I%20am%20interested%20in%20wholesale%20dealership" class="btn btn-whatsapp" style="width: 100%; margin-bottom: 0.8rem;" target="_blank">
+        <a href="https://wa.me/918208949238?text=Hello%20Shri%20Ram%20Foods,%20I%20am%20interested%20in%20placing%20a%20bulk%20order" class="btn btn-whatsapp" style="width: 100%; margin-bottom: 0.8rem;" target="_blank">
           💬 Chat on WhatsApp
         </a>
         
-        <a href="tel:+918208949238" class="btn" style="width: 100%; background: var(--dark);">
+        <a href="tel:+918208949238" class="btn" style="width: 100%; background: var(--dark); color: #fff;">
           📞 Call: +91 82089 49238
         </a>
       </div>
